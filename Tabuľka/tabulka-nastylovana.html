@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Naštýlovaná tabuľka</title>
+  <style>
+    .styled-table {
+      border-collapse: collapse;  /*Odstráni okraje okolo buniek*/
+      font-family: sans-serif;    /*Na stránke sme použili tym písma*/
+      font-size: 1em;             /* Reprezentuje pomer písma 1.0 em sa rovná 100% */
+      margin: 25px 0;               /* Odsadenie strany okraja zo všetkých strán */
+      min-width: 400px;
+      box-shadow: 2px -1px 11px 7px rgba(0,0,0,0.75);
+      -webkit-box-shadow: 2px -1px 11px 7px rgba(0,0,0,0.75);
+      -moz-box-shadow: 2px -1px 11px 7px rgba(0,0,0,0.75);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .styled-table thead tr {
+      background-color: #84ff00;
+      color: white;
+      text-align: left;
+    }
+    .styled-table th , .styled-table tr {
+      padding: 12px 15px;
+    }
+    .styled-table tbody tr {
+      border-bottom: 1px solid #8d8e90;
+    }
+    .styled-table tbody tr:nth-of-type(even) {
+      background-color: #8d8e90;
+    }
+    .styled-table tbody tr:last-of-type {
+      border-bottom: 2px solid;
+    }
+    .styled-table tbody tr:hover {
+      background-color: red;
+    }
+
+  </style>
+
+</head>
+<body>
+<table class="styled-table">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Points</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td> Lorem </td>
+    <td> LOREM </td>
+  </tr>
+  <tr class="active-row">
+    <td>Melissa</td>
+    <td>5150</td>
+  </tr>
+  <tr>
+    <td> JEOTAK </td>
+    <td> NOTAKTAK </td>
+  </tr>
+  <!-- and so on... -->
+  </tbody>
+</table>
+</body>
+</html>
